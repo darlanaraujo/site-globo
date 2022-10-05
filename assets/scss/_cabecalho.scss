@@ -1,0 +1,56 @@
+@import 'cores';
+
+.cabecalho {
+    width: 100%;
+
+    .topo {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        padding: 10px 0;
+
+        .coluna {
+            display: flex;
+            gap: 5px;
+
+            .btn-menu-topo {
+                background: none;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                padding: 15px;
+                cursor: pointer;
+            }
+
+            .btn-menu-topo:nth-child(1) {
+                border-right: solid 2px $corLinha;
+            }
+
+            .input-busca {
+                width: 50px;
+            }
+        }
+
+        .coluna:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+    }
+
+    .menu-principal {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+}
+
+.logo {
+    height: 40px;
+}
+
