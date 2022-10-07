@@ -2,11 +2,14 @@
 
 .cabecalho {
     width: 100%;
+    // max-width: 1000px;
+    // margin: 0 20px;
 
     .topo {
         display: grid;
-        grid-template-columns: 200px 1fr 200px;
+        grid-template-columns: 200px 1fr 280px;
         padding: 10px 0;
+        border-bottom: solid 2px $corLinha;
 
         .coluna {
             display: flex;
@@ -21,14 +24,11 @@
                 gap: 15px;
                 padding: 15px;
                 cursor: pointer;
+
             }
 
-            .btn-menu-topo:nth-child(1) {
-                border-right: solid 2px $corLinha;
-            }
-
-            .input-busca {
-                width: 50px;
+            .btn-menu-topo:nth-child(2) {
+                border-left: solid 2px $corLinha;
             }
         }
 
@@ -37,20 +37,27 @@
             justify-content: center;
             align-items: center;
         }
-
-        
     }
 
-    .menu-principal {
+    .nav {
         width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        border-bottom: solid 2px $corLinha;
 
+        .menu-principal {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .menu {
+                padding: 15px;
+                font-weight: 700;
+
+                &:hover {
+                    opacity: .70;
+                }
+            }
+        }
     }
-}
 
-.logo {
-    height: 40px;
 }
-

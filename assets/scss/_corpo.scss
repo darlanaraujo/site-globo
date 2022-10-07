@@ -1,0 +1,12 @@
+.corpo {
+    width: 100%;
+
+    .secao-destaque-principal {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 10px;
+
+        
+    }
+}

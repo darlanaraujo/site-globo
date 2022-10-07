@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'cores';
 @import 'cabecalho';
+@import 'corpo';
 
 body {
     width: 100%;
@@ -9,8 +10,60 @@ body {
 
     .page {
         width: 100%;
-        max-width: 1000px;
-        margin: 0 20px;
-        border: solid 1px red;
+
     }
+}
+
+// Estilos gerais;
+.logo {
+    height: 40px;
+}
+
+.icon-site {
+    font-size: 20px;
+    color: $corIcon;
+}
+
+.img-noticia {
+    width: 250px;
+}
+
+.G1 {
+    color: $corG1;
+}
+
+.OGLOBO {
+    color: $corOGlobo;
+}
+
+.VALOR {
+    color: $corValor;
+}
+
+.GE {
+    color: $corGe;
+}
+
+.CARTOLA {
+    color: $corCartola;
+}
+
+.GLOBOPLAY {
+    color: $corGloboplay;
+}
+
+.GSHOW {
+    color: $corGshow;
+}
+
+.QUEM {
+    color: $corQuem;
+}
+
+.RECEITAS {
+    color: $corReceitas;
+}
+
+.GIGAGLOOB {
+    color: $corGigaGloob;
 }
